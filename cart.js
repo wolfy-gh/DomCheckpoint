@@ -46,7 +46,7 @@
         document.getElementsByClassName('cart-total-price')[0].innerText = '$'+ total
     }
     // like and dislike button
-    var likesbtn = document.getElementsByClassName('likebtn');
+    var likesbtn = Array.from (document.getElementsByClassName('likebtn'));
     for( let i=0; i <likesbtn.length;i++){   
     likesbtn[i].addEventListener('click',function likeToggle(){
         if (likesbtn[i].classList.contains("far")){
