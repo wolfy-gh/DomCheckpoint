@@ -26,7 +26,6 @@
   justify-content: center;
   padding: 20px 0 10px 0;
 }
-
 .plus {
   color: green;
   margin-left: 25px;
@@ -66,20 +65,15 @@
   margin-top: 10px;
   margin-right: 10px;
 }
-
 .cart-total-title {
   font-weight: bold;
   font-size: 1.5em;
   color: black;
   margin-right: 20px;
 }
-
 .cart-total-price {
   color: #333;
   font-size: 1.5em;
-}
-.carousel {
-  width: 25%px;
 }
 footer {
   text-align: center;
