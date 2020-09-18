@@ -1,13 +1,12 @@
-  
+    // remove item 
    var removeBtn = document.getElementsByClassName('btn-danger');
     for (let i=0; i< removeBtn.length;i++){
         removeBtn[i].addEventListener('click', function removeCart(event){
             event.target.parentElement.parentElement.remove()   
             updateCartTotal()         
-        })
-        
+        })     
     }
-
+    // increment and decrement quantity
     var cartItems= document.getElementsByClassName('cart-items')[0]
     var cartRow = Array.from(cartItems.getElementsByClassName('cart-row'))
     for (let i=0; i<cartRow.length ;i++){   
@@ -31,7 +30,7 @@
         }) 
         updateCartTotal() 
     }
-
+     //update the Total
     function updateCartTotal(){
         var cartItems= document.getElementsByClassName('cart-items')[0]
         var cartRows = cartItems.getElementsByClassName('cart-row')
@@ -46,10 +45,9 @@
         total= Math.round(total*100)/100
         document.getElementsByClassName('cart-total-price')[0].innerText = '$'+ total
     }
-
+    // like and dislike button
     var likesbtn = document.getElementsByClassName('likebtn');
-for( let i=0; i <likesbtn.length;i++){
-    
+    for( let i=0; i <likesbtn.length;i++){   
     likesbtn[i].addEventListener('click',function likeToggle(){
         if (likesbtn[i].classList.contains("far")){
             likesbtn[i].classList.remove("far");
@@ -58,8 +56,6 @@ for( let i=0; i <likesbtn.length;i++){
             likesbtn[i].classList.remove("fas");
             likesbtn[i].classList.add("far");
         }
-
-
 })}
 
 

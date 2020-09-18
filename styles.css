@@ -1,10 +1,9 @@
 .cart-row {
-  /* margin : 0 5px; */
   width: 400px;
   border-radius: 20px;
 }
 .cart-row:hover {
-  background-color:#f7f7f7;
+  background-color: #f7f7f7;
   box-shadow: 0px 1px 5px #5cb85c;
 }
 .cart-item-title {
@@ -29,14 +28,26 @@
 }
 
 .plus {
-  background-color: whitesmoke;
   color: green;
   margin-left: 25px;
+  padding-top: 7px;
+}
+.cart-quantity-input {
+  height: 30px;
+  width: 40px;
+  border-radius: 5px;
+  border: 1px solid #5cb85c;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
 }
 .minus {
-  background-color: whitesmoke;
   color: red;
   margin-right: 25px;
+  padding-top: 7px;
 }
 .like-container {
   display: flex;
